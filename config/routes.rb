@@ -1,4 +1,8 @@
 DemoApp::Application.routes.draw do
+  get "tasks/index"
+
+resources :tasks
+root :to=>"tasks#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
